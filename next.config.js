@@ -68,9 +68,9 @@ const nextConfig = {
             value: `
               default-src 'self';
               script-src 'self' 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' 'inline-speculation-rules' chrome-extension: https://apis.google.com https://www.googletagmanager.com https://*.google-analytics.com;
-              style-src 'self' 'unsafe-inline';
+              style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
               img-src 'self' blob: data: https://images.unsplash.com http://localhost:* https://*.google-analytics.com https://*.googletagmanager.com;
-              font-src 'self' data:;
+              font-src 'self' data: https://fonts.gstatic.com;
               connect-src 'self' https://*.firebaseio.com https://*.googleapis.com https://*.google-analytics.com https://www.googletagmanager.com https://identitytoolkit.googleapis.com https://web3forms.com/;
               frame-src 'self' https://accounts.google.com https://*.firebaseapp.com;
               object-src 'none';

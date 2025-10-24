@@ -20,7 +20,6 @@ export function getCSP(nonce: string) {
       "'unsafe-eval'",
       "'wasm-unsafe-eval'",
       "'inline-speculation-rules'",
-      `'nonce-${nonce}'`,
       'chrome-extension:',
       'https://apis.google.com',
       'https://*.googletagmanager.com',
